@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .link {
+    @apply cursor-pointer transition-transform hover:text-green-400;
+  }
+}
+
+@layer components {
+  .margin-2 {
+    @apply m-2;
+  }
+  .button {
+    @apply p-1 text-sm md:text-sm bg-gradient-to-b from-blue-700 to-blue-500 rounded-sm;
+  }
+  .button:focus {
+    @apply outline-none;
+  }
+  .button:hover {
+    @apply text-white to-blue-900;
+  }
+  .button-signin {
+    @apply text-white font-bold bg-black rounded-md transition-all border-2 px-2 py-1 hover:bg-white hover:text-black hover:font-bold focus:outline-none;
+  }
+  .button-login {
+    @apply text-black font-bold px-2 py-1 bg-white rounded-md border-2 focus:outline-none focus:bg-gray-300;
+  }
+  .user-label {
+    @apply border-white bg-white text-black rounded-3xl h-10;
+  }
+}
